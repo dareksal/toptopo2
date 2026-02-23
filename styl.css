@@ -1,0 +1,207 @@
+body {
+    margin: 0px;
+    background-color: #4f4f4d;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+    font-family: 'Montserrat',sans-serif;
+    color:#f6f5f0 ;
+    font-size: 35px;
+}
+
+
+img{
+    border-radius: 1%;
+}
+.header {
+    background-color:#c9784f	;
+    position: static;
+    width: 100%;
+    text-align: center; 
+    align-content: center;
+    top: 0;
+    left: 0;
+    height: fit-content;
+    font-weight: 900;
+    padding-bottom: 1.6%;
+    font-size: 40px;
+}
+
+.nawig {
+   
+    display: flex;
+    border-style: none solid none solid;
+    border-width: 1px;
+    padding-left: 0.9vh;
+    padding-right: 0.9vh;
+    height: 70%;
+    justify-content: center;
+
+}
+
+.meganawig {
+      container-type: inline-size;
+    font-size: 1.7cqw;
+    display: flex;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.meganawig:hover {
+    justify-content: center;
+    background-color:#d79548	 ;
+    width: fit-content;
+    border-radius: 30px;
+    padding-left: 9%;
+    padding-right: 8%;
+    height: 90%;
+
+}
+
+#headerer {
+    z-index: 10;
+    position: relative;
+    margin-top: -12px;
+    top: 0px;
+    position: sticky;
+    background-color: #c9784f	;
+    height: 4vh;
+    border-radius: 12px 12px 12px 12px;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    font-size: 80%;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+
+#tresc {
+    margin: 10vh 7vh 10vh 7vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:rgba(165, 169, 166, 0.2) ;
+    padding: 6%;
+}
+
+#ogolne {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.text_gl {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.a_zew{
+    font-weight: bold;
+}
+.a_zew:hover{
+    text-decoration: underline;
+}
+a{
+    width: fit-content;
+    text-decoration: none;
+    color: inherit;
+}
+#zdog {
+    width: 95%;
+        margin: auto;
+   
+}
+
+.zdj_g {
+    width: 100%;
+    margin-left: 0px;
+    align-self: flex-start;
+
+}
+.gwiazdka{
+    content: url('')
+
+}
+.kolorki{
+    width:3%;
+    margin-right: 5px;
+}
+
+.linijka_kolory{
+    display:flex;
+    align-self: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-left: 6%;
+    margin-bottom: 3%;
+}
+.tytuly{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    height: 5%;
+    background-color:#a5a9a6 ;
+    border-radius: 40px;
+}
+.zdj_opis{
+  
+ width: 95%;
+
+}
+
+.opis_drogi {
+  background-color:#c9784f	 ;
+  border-radius: 20px;
+  padding-left: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.opis_drogi:hover{
+    background-color: #d79548	;
+}
+
+.cyferka {
+    width: fit-content;
+    float: left;
+}
+
+.chevron {
+    transition: transform 0.3s ease;
+}
+
+.active .chevron {
+    transform: rotate(0deg);
+}
+
+.rozw {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-out;
+}
+
+.rozw.active {
+    display: flex;
+    flex-wrap:wrap;
+    max-height:fit-content;
+    opacity: 1;
+    transform: translateY(0);
+    justify-content:center ;
+    text-align: left;
+}
