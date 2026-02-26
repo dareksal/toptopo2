@@ -52,7 +52,6 @@ rozwoj.forEach(przycisk => {
     });
 });*/
 const rozwoj = document.querySelectorAll('.opis_drogi');
-const lightbox = GLightbox({ selector: '.glightbox' });
 rozwoj.forEach(przycisk => {
     przycisk.addEventListener('click', () => {
         const targetId = przycisk.getAttribute('data-target');
@@ -78,4 +77,9 @@ rozwoj.forEach(przycisk => {
             }
         }
     });
+});
+const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true, // To możesz zostawić dla telefonów
+    lockScroll: false
 });
