@@ -80,6 +80,9 @@ rozwoj.forEach(przycisk => {
 });
 const lightbox = GLightbox({
     selector: '.glightbox',
-    touchNavigation: true, // To możesz zostawić dla telefonów
-    lockScroll: false
+    lockScroll: false,
+    loop: false,           // Wyłącza zapętlenie
+    closeButton: true,     // Zostawiasz tylko przycisk zamykania
+    touchNavigation: false, // Opcjonalnie: wyłącza swipe na telefonie
+    keyboardNavigation: false // Wyłącza sterowanie strzałkami na klawiaturze
 });
