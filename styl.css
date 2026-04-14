@@ -205,5 +205,18 @@ a{
     justify-content:center ;
     text-align: left;
 }
-
-
+.zajmowacz_m{
+    height: 50vh;
+    width: 100%;
+}
+.linia_oddzielajaca{
+    margin-left: calc(70% - 56.5vw);
+    margin-right: calc(70% - 56.5vw);
+    background-color: #a5a9a6;
+    height: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    opacity: 0.3;
+    border-radius: 30px;
+    
+}
