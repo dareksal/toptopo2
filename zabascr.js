@@ -51,6 +51,7 @@ rozwoj.forEach(przycisk => {
         //przycisk.classList.toggle('active');
     });
 });*/
+document.getElementById("rok").innerText = new Date().getFullYear();
 const rozwoj = document.querySelectorAll('.opis_drogi');
 rozwoj.forEach(przycisk => {
     przycisk.addEventListener('click', () => {
