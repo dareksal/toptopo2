@@ -44,9 +44,8 @@ img{
     padding-right: 0.9vh;
     height: 70%;
     justify-content: center;
-       width: fit-content;
-
 }
+
 .nawig:hover{
      justify-content: center;
     background-color:#d79548	 ;
@@ -85,16 +84,17 @@ img{
     font-size: 80%;
     font-weight: 500;
     padding-bottom: 10px;
+     z-index: 999;
 }
 
 
 #tresc {
-    margin: 10vw 7vw 10vw 7vw;
+    margin: 5vw 2vw 5vw 2vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color:rgba(165, 169, 166, 0.2) ;
-    padding: 6%;
+    padding: 3%;
     flex: 1;
 }
 
@@ -162,6 +162,7 @@ a{
     height: 5%;
     background-color:#a5a9a6 ;
     border-radius: 40px;
+    height: fit-content;
 }
 .zdj_opis{
   
@@ -196,20 +197,26 @@ a{
 }
 
 .rozw {
+display: flex;
+  flex-direction: column; 
+  align-items: center;   
+  justify-content: center;
+  text-align: center;     
     max-height: 0;
     overflow: hidden;
     opacity: 0;
+    background-color: #787a79;
     transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-out;
 }
 
 .rozw.active {
-    display: flex;
-    flex-wrap:wrap;
+    padding-top:8px;
+    padding-bottom:8px;
     max-height:fit-content;
     opacity: 1;
     transform: translateY(0);
     justify-content:center ;
-    text-align: left;
+
 }
 .zajmowacz_m{
     height: 50vw;
@@ -261,3 +268,22 @@ i{
 .gwiazd{
     width: 1.5vw;
 }
+.czarnch {
+  position: relative;
+  margin: 2vw 1vw;   /* taki sam odstęp jak #tresc */
+  padding: 6%;        /* taki sam padding jak #tresc */
+  box-sizing: border-box;
+}
+
+.czarnch::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000;
+  z-index: 0;
+  border-radius: 12px; /* opcjonalnie */
+}
+
+.czarnch > * {
+  position: relative;
+  z-index: 1;}
